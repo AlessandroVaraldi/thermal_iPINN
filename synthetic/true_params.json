@@ -1,16 +1,16 @@
 {
   "C_th_true": 7.0,
   "R_cond_true": 3.0,
-  "C_th_classic": 7.824134562157882,
-  "R_cond_classic": 2.960281914518259,
-  "R_conv_base": 10.0,
-  "C_bp_true": 30.0,
-  "R_bp_amb_true": 1.5,
+  "C_th_classic": 7.070469593197371,
+  "R_cond_classic": 2.740213113855301,
+  "R_conv_base": 100.0,
+  "C_bp_true": 50.0,
+  "R_bp_amb_true": 10.0,
   "alpha_bp_true": 0.2,
-  "sigma_case": 0.2,
-  "sigma_bplate": 0.1,
-  "drift_rel": 0.03,
-  "extra_leak_R": 300.0,
+  "sigma_case": 0.25,
+  "sigma_bplate": 0.3,
+  "drift_rel": 0.02,
+  "extra_leak_R": 100.0,
   "sensor_tau": 2.0,
   "Tamb_values_used": [
     25.0,
@@ -26,42 +26,42 @@
     {
       "scenario_id": 0,
       "Tamb_C": 40.0,
-      "R_conv_true": 10.0,
+      "R_conv_true": 100.0,
       "airflow_factor": 1.0,
       "csv_file": "scenario_000.csv"
     },
     {
       "scenario_id": 1,
       "Tamb_C": 25.0,
-      "R_conv_true": 10.0,
+      "R_conv_true": 100.0,
       "airflow_factor": 1.0,
       "csv_file": "scenario_001.csv"
     },
     {
       "scenario_id": 2,
       "Tamb_C": 60.0,
-      "R_conv_true": 16.666666666666668,
+      "R_conv_true": 166.66666666666669,
       "airflow_factor": 0.6,
       "csv_file": "scenario_002.csv"
     },
     {
       "scenario_id": 3,
       "Tamb_C": 25.0,
-      "R_conv_true": 33.333333333333336,
+      "R_conv_true": 333.33333333333337,
       "airflow_factor": 0.3,
       "csv_file": "scenario_003.csv"
     },
     {
       "scenario_id": 4,
       "Tamb_C": 40.0,
-      "R_conv_true": 16.666666666666668,
+      "R_conv_true": 166.66666666666669,
       "airflow_factor": 0.6,
       "csv_file": "scenario_004.csv"
     },
     {
       "scenario_id": 5,
       "Tamb_C": 60.0,
-      "R_conv_true": 10.0,
+      "R_conv_true": 100.0,
       "airflow_factor": 1.0,
       "csv_file": "scenario_005.csv"
     }

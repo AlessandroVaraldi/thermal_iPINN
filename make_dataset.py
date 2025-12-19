@@ -417,30 +417,30 @@ def parse_args():
     ap.add_argument("--seed", type=int, default=42, help="Global random seed")
 
     # Nominal thermal parameters for the case node
-    ap.add_argument("--Cth-true", type=float, default=50.0, help="Nominal C_th [J/K]")
-    ap.add_argument("--Rcond-true", type=float, default=0.5, help="Nominal R_cond [K/W]")
-    ap.add_argument("--Rconv-base", type=float, default=5.0, help="Base R_conv [K/W] (airflow will scale it)")
+    ap.add_argument("--Cth-true", type=float, default=5.0, help="Nominal C_th [J/K]")
+    ap.add_argument("--Rcond-true", type=float, default=1.0, help="Nominal R_cond [K/W]")
+    ap.add_argument("--Rconv-base", type=float, default=50.0, help="Base R_conv [K/W] (airflow will scale it)")
 
     # Backplate parameters
-    ap.add_argument("--Cbp-true", type=float, default=30.0, help="C_bp [J/K]")
-    ap.add_argument("--Rbp-amb", type=float, default=1.5, help="R_bp_amb [K/W]")
+    ap.add_argument("--Cbp-true", type=float, default=50.0, help="C_bp [J/K]")
+    ap.add_argument("--Rbp-amb", type=float, default=10.0, help="R_bp_amb [K/W]")
     ap.add_argument("--alpha-bp", type=float, default=0.2, help="Fraction of P heating the backplate")
 
     # Measurement noise
-    ap.add_argument("--sigma-case", type=float, default=0.2, help="Std dev of noise on T_case_meas [°C]")
-    ap.add_argument("--sigma-bp", type=float, default=0.1, help="Std dev of noise on T_bplate [°C]")
+    ap.add_argument("--sigma-case", type=float, default=0.25, help="Std dev of noise on T_case_meas [°C]")
+    ap.add_argument("--sigma-bp", type=float, default=0.3, help="Std dev of noise on T_bplate [°C]")
 
     # Non-idealities
     ap.add_argument(
         "--drift-rel",
         type=float,
-        default=0.03,
+        default=0.02,
         help="Relative std of slow drift for C_th, R_cond, R_conv (0 disables drift)",
     )
     ap.add_argument(
         "--extra-leak-R",
         type=float,
-        default=300.0,
+        default=100.0,
         help="Additional unmodeled thermal resistance to ambient [K/W] (0 disables extra leak)",
     )
     ap.add_argument(
